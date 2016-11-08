@@ -42,7 +42,7 @@ def staircase():
 def front_door():
     print "As you go outside, you stand on a beautiful field of flowers."
     if "spokenwithgranny" not in backpack:
-        print "It's a beuatiful day and I can't stop myself from smiling..."
+        print "It's a beautiful day and I can't stop myself from smiling..."
         print "But now go back inside."
         start()
     else:

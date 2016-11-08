@@ -6,8 +6,8 @@ class Bookcase(object):
         self.width = width
         self.height = height
 
-    def __str__(self):
-        return self.prettyprint()
+    def __str__(self): #str is a special function. Gets called on any datatype when it should be printed. 
+        return self.prettyprint() #they give back a string
 
     def prettyprint(self):
         return "A Generic Bookcase"
