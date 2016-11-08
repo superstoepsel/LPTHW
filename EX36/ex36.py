@@ -24,7 +24,7 @@ def staircase():
         gapchoice = raw_input("> ")
         gapchoiceNumber = int(gapchoice)
 
-        if gapchoiceNumber == 1 or "Rush" in stairchoice:
+        if gapchoiceNumber == 1 or "ush" in stairchoice:
             dead("Rushing is not safe. You fall down!")
         elif gapchoiceNumber == 2 or "slowly" in stairchoice:
             print "Yay, you've done it! You can go further upstairs."
@@ -50,7 +50,7 @@ def front_door():
 
         flowerchoice = raw_input("> ")
 
-        if "yes" in flowerchoice:
+        if "es" in flowerchoice:
             print "There are 3 red ones and 20 blue ones."
             print "1. Which color do you choose?"
             colorchoice = raw_input("> ")
@@ -74,9 +74,9 @@ def front_door():
 
                 flowerchance = raw_input("> ")
 
-                if "Yes" in flowerchance:
-                    dead("Well, if you can't do what you're told, you will die with", numberchoice, "blue flowers in your backpack.")
-                elif "No" in flowerchance:
+                if "es" in flowerchance:
+                    dead("Well, if you can't do what you're told, you will die with some blue flowers in your backpack.")
+                elif "o" in flowerchance:
                     front_door()
             elif "blue" in colorchoice and numberchoiceNumber > 20:
                 dead("You can't take more flowers than there are, greedy environmental wrecker!")
@@ -98,7 +98,7 @@ def grannys_room():
     if "back" in grannychoice or "leave" in grannychoice:
         print "You are a unfriendly bastard! If a granny waves, you can't just go!"
         start()
-    elif ("granny" in grannychoice or "go to" in grannychoice) and "spokenwithgranny" not in backpack:
+    elif ("granny" in grannychoice or "go to" in grannychoice or "old" in grannychoice) and "spokenwithgranny" not in backpack:
         print "Granny takes your hand and whispers in your ear:"
         print "\"Dear Child, would you be as nice to bring me some flowers?"
         print "But I don't like blue ones - only red ones!\""
@@ -107,7 +107,7 @@ def grannys_room():
         start()
     elif "beentogrannytwice" in backpack and "flowers" not in backpack:
         dead("You are too silly to pick flowers for granny - you should not proceed this game!")
-    elif ("granny" in grannychoice or "go to" in grannychoice) and "spokenwithgranny" in backpack:
+    elif ("granny" in grannychoice or "go to" in grannychoice or "old" in grannychoice) and "spokenwithgranny" in backpack:
         if "flowers" in backpack and "beenToStairs" not in backpack:
             print "You give the red flowers to Granny."
             print "She smiles at you and takes your hand."
