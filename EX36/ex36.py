@@ -24,9 +24,9 @@ def staircase():
         gapchoice = raw_input("> ")
         gapchoiceNumber = int(gapchoice)
 
-        if gapchoiceNumber == 1:
+        if gapchoiceNumber == 1 or "Rush" in stairchoice:
             dead("Rushing is not safe. You fall down!")
-        elif gapchoiceNumber == 2:
+        elif gapchoiceNumber == 2 or "slowly" in stairchoice:
             print "Yay, you've done it! You can go further upstairs."
             print "You've found the treasure. It's an old golden medallion."
             print "As you go back to the granny she tells you that it's worth over 1 Million $."
