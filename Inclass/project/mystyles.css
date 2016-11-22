@@ -1,0 +1,25 @@
+/*Style by tag*/
+h1 {
+  color: white;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  background-color: black;
+}
+
+/* Style by id */
+#content {
+  background-color: rgb(242, 11, 198);
+  color: rgb(100, 0, 0);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Style by class */
+.important {
+  font-size: 120%;
+  font-style: normal;
+  color: blue;
+}
